@@ -91,6 +91,9 @@
                                         <state key="normal" title="Start">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="getTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dEB-hU-gQe"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDZ-O3-gQ8">
                                         <rect key="frame" x="0.0" y="171" width="343" height="28"/>
@@ -115,6 +118,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="hourTextField" destination="dS8-mF-1MT" id="5XZ-Xc-kfF"/>
+                        <outlet property="minutesTextField" destination="FUK-oz-Hla" id="dJ1-gr-pgQ"/>
+                        <outlet property="secondsTextField" destination="HBX-pX-3zO" id="8UL-AQ-Z26"/>
+                        <outlet property="timeLabel" destination="HDZ-O3-gQ8" id="j2J-ft-1eS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
