@@ -118,7 +118,7 @@ class ViewController: UIViewController {
         
         // let b = minutes / 5
         var c = ""
-        for i in 0...11 {
+        for i in 0...10 {
             if i >= minutes / 5 {
                 c += "O"
             } else if i % 3 == 2 {

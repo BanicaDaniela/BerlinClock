@@ -16,6 +16,34 @@ class BerlinClockConverterTests: XCTestCase {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
+    let Clock = ViewController()
+    
+    func testGetSecondsLine() {
+        XCTAssertEqual("Y", Clock.getSecondsLine(seconds: 0))
+    }
+    
+    func testGetFirstHourLine(){
+        XCTAssertEqual("RROO", Clock.getFirstLHourLine(hour: 13))
+        
+    }
+    
+    func testGetSecondHourLine(){
+        XCTAssertEqual("RRRO", Clock.getSecondHourLine(hour: 13))
+        XCTAssertEqual("ROOO", Clock.getSecondHourLine(hour: 11))
+        
+    }
+    
+    func testGetFirstMinutesLine(){
+        XCTAssertEqual("YYROOOOOOOO", Clock.getFirstMinutesLine(minutes: 17))
+        
+    }
+    
+    func testGetSecondMInutesLine(){
+        XCTAssertEqual("YYOO", Clock.getSecondMinutesLine(minutes: 17))
+        
+    }
+    
+    
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
